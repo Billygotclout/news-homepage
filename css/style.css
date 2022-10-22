@@ -36,9 +36,11 @@ li {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
+  max-width: 43.75rem;
 }
 .nav .nav-links {
   display: flex;
+
 }
 .nav .nav-links .nav-item {
   margin-left: 30px;
@@ -139,7 +141,7 @@ li {
 
 @media screen and (max-width: 500px) {
     body{
-      
+      padding: 2rem;
     }
   .grid-section {
     grid-template-areas: "section1 section1 section1 section1 section1 section1" "section2 section2 section2 section2 section2 section2";
@@ -150,16 +152,20 @@ li {
   .section-2{
     margin-bottom: 50px;
   }
-  nav {
-    display: none;
-    transform-origin: top center;
-    animation: showMenu 0.5 ease-in-out forwards;
-  }
 
- header{
-    display: none;
- }
+
  .section-3 {
     grid-template-areas: 'card1 card1 card1 card1 card1 card1' 'card2 card2 card2 card2 card2 card2''card3 card3 card3 card3 card3 card3';
+    gap: 2rem;
  }
+ .lower-section div {
+  padding: 0;
+  }
+
+ nav {
+   flex-direction: column;
+  }
+  nav ul{
+    flex-direction: column;
+  }
 }
